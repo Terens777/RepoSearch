@@ -16,9 +16,9 @@ protocol RepoSearchListViewProtocol {
 class RepoSearchListView: UIView, RepoSearchListViewProtocol {
     
     private let contentView = UIView()
+    private let bag = DisposeBag()
     let searchBar: UISearchBar = UISearchBar()
     let tableView: UITableView = UITableView()
-    private let bag = DisposeBag()
     
     init() {
         super.init(frame: .zero)
@@ -57,7 +57,7 @@ class RepoSearchListView: UIView, RepoSearchListViewProtocol {
 
 extension UIView {
     func addSubviews(_ views: UIView...) {
-        views.forEach{( addSubview($0) )}
+        views.forEach {( addSubview($0) )}
     }
 }
 

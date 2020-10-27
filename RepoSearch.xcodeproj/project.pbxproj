@@ -13,6 +13,13 @@
 		21525E09254570510038B27B /* RepoSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21525E08254570510038B27B /* RepoSearchListView.swift */; };
 		21525E21254572900038B27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21525E10254570940038B27B /* Assets.xcassets */; };
 		21525E29254575B80038B27B /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 21525E28254575B80038B27B /* RxGesture */; };
+		2196E31F254825E2001FC336 /* NetworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E31E254825E2001FC336 /* NetworkParser.swift */; };
+		2196E3232548266C001FC336 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E3222548266C001FC336 /* Configurable.swift */; };
+		2196E328254826D0001FC336 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E327254826D0001FC336 /* Observable+Extension.swift */; };
+		2196E32C25482710001FC336 /* NetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E32B25482710001FC336 /* NetworkingLogger.swift */; };
+		2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */; };
+		2196E3332548285C001FC336 /* JSON+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E3322548285C001FC336 /* JSON+Extension.swift */; };
+		2196E336254828EB001FC336 /* NetworkParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E335254828EB001FC336 /* NetworkParserError.swift */; };
 		2198BE20254452D300ECADB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198BE1F254452D300ECADB7 /* AppDelegate.swift */; };
 		2198BE24254452D300ECADB7 /* RepoSearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198BE23254452D300ECADB7 /* RepoSearchListViewController.swift */; };
 		2198BE2C254452D600ECADB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2198BE2A254452D600ECADB7 /* LaunchScreen.storyboard */; };
@@ -22,6 +29,9 @@
 		2198BE3F2544541800ECADB7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2198BE3E2544541800ECADB7 /* Realm */; };
 		2198BE412544541800ECADB7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2198BE402544541800ECADB7 /* RealmSwift */; };
 		2198BE452544545B00ECADB7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2198BE442544545B00ECADB7 /* SnapKit */; };
+		21B0D8FA25473C2C0052B10E /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8F925473C2C0052B10E /* NetworkCore.swift */; };
+		21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */; };
+		21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D90025473CE70052B10E /* NetworkEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +40,21 @@
 		214A1BC425446154007949AC /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		21525E08254570510038B27B /* RepoSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListView.swift; sourceTree = "<group>"; };
 		21525E10254570940038B27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2196E31E254825E2001FC336 /* NetworkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParser.swift; sourceTree = "<group>"; };
+		2196E3222548266C001FC336 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		2196E327254826D0001FC336 /* Observable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
+		2196E32B25482710001FC336 /* NetworkingLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLogger.swift; sourceTree = "<group>"; };
+		2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Extension.swift"; sourceTree = "<group>"; };
+		2196E3322548285C001FC336 /* JSON+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Extension.swift"; sourceTree = "<group>"; };
+		2196E335254828EB001FC336 /* NetworkParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParserError.swift; sourceTree = "<group>"; };
 		2198BE1C254452D300ECADB7 /* RepoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2198BE1F254452D300ECADB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2198BE23254452D300ECADB7 /* RepoSearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListViewController.swift; sourceTree = "<group>"; };
 		2198BE2B254452D600ECADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2198BE2D254452D600ECADB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B0D8F925473C2C0052B10E /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
+		21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBuilder.swift; sourceTree = "<group>"; };
+		21B0D90025473CE70052B10E /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		214A1BC025446129007949AC /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				214A1BBC25445AD8007949AC /* AppCoordinator.swift */,
 				214A1BC125446137007949AC /* Coordinator.swift */,
 				214A1BC425446154007949AC /* BaseCoordinator.swift */,
 			);
@@ -84,6 +105,7 @@
 		21525E0D254570790038B27B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2198BE1F254452D300ECADB7 /* AppDelegate.swift */,
 				21525E0F254570840038B27B /* Resources */,
 			);
 			path = Application;
@@ -97,6 +119,24 @@
 				2198BE2D254452D600ECADB7 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2196E32125482663001FC336 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2196E3222548266C001FC336 /* Configurable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2196E326254826C5001FC336 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2196E327254826D0001FC336 /* Observable+Extension.swift */,
+				2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */,
+				2196E3322548285C001FC336 /* JSON+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2198BE13254452D300ECADB7 = {
@@ -118,13 +158,35 @@
 		2198BE1E254452D300ECADB7 /* RepoSearch */ = {
 			isa = PBXGroup;
 			children = (
+				21B0D8F425473BC30052B10E /* Common */,
 				21525E0D254570790038B27B /* Application */,
-				21525E0B2545705C0038B27B /* Flows */,
-				214A1BC025446129007949AC /* Coordinators */,
-				2198BE1F254452D300ECADB7 /* AppDelegate.swift */,
-				214A1BBC25445AD8007949AC /* AppCoordinator.swift */,
 			);
 			path = RepoSearch;
+			sourceTree = "<group>";
+		};
+		21B0D8F425473BC30052B10E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2196E326254826C5001FC336 /* Extensions */,
+				2196E32125482663001FC336 /* Helpers */,
+				21B0D8F825473C1C0052B10E /* Network */,
+				214A1BC025446129007949AC /* Coordinators */,
+				21525E0B2545705C0038B27B /* Flows */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		21B0D8F825473C1C0052B10E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				21B0D8F925473C2C0052B10E /* NetworkCore.swift */,
+				21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */,
+				21B0D90025473CE70052B10E /* NetworkEndpoint.swift */,
+				2196E31E254825E2001FC336 /* NetworkParser.swift */,
+				2196E32B25482710001FC336 /* NetworkingLogger.swift */,
+				2196E335254828EB001FC336 /* NetworkParserError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +273,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2196E32C25482710001FC336 /* NetworkingLogger.swift in Sources */,
+				21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */,
 				214A1BC525446154007949AC /* BaseCoordinator.swift in Sources */,
+				21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */,
+				2196E336254828EB001FC336 /* NetworkParserError.swift in Sources */,
 				214A1BC225446137007949AC /* Coordinator.swift in Sources */,
 				214A1BBD25445AD8007949AC /* AppCoordinator.swift in Sources */,
+				2196E3232548266C001FC336 /* Configurable.swift in Sources */,
+				2196E31F254825E2001FC336 /* NetworkParser.swift in Sources */,
+				2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */,
 				2198BE24254452D300ECADB7 /* RepoSearchListViewController.swift in Sources */,
+				2196E328254826D0001FC336 /* Observable+Extension.swift in Sources */,
 				21525E09254570510038B27B /* RepoSearchListView.swift in Sources */,
 				2198BE20254452D300ECADB7 /* AppDelegate.swift in Sources */,
+				2196E3332548285C001FC336 /* JSON+Extension.swift in Sources */,
+				21B0D8FA25473C2C0052B10E /* NetworkCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

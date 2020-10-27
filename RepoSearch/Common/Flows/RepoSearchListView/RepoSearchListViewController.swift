@@ -11,10 +11,6 @@ class RepoSearchListViewController: UIViewController {
     
     let contentView: RepoSearchListViewProtocol & UIView
     
-    override func loadView() {
-        view = contentView
-    }
-    
     init(contentView: RepoSearchListViewProtocol & UIView) {
         self.contentView = contentView
         super.init(nibName: nil, bundle: nil)
@@ -25,12 +21,16 @@ class RepoSearchListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        view = contentView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     private func configure() {
-        title = "Search repo in github.com"
+        title = "github.com"
     }
 }
