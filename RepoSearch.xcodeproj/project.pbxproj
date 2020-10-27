@@ -32,10 +32,15 @@
 		21B0D8FA25473C2C0052B10E /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8F925473C2C0052B10E /* NetworkCore.swift */; };
 		21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */; };
 		21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D90025473CE70052B10E /* NetworkEndpoint.swift */; };
+		83174E342548663300A96734 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E332548663300A96734 /* UIView+Extension.swift */; };
+		83174E372548673500A96734 /* RepoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E362548673500A96734 /* RepoCardView.swift */; };
+		83174E3A2548689B00A96734 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E392548689B00A96734 /* Int+Extension.swift */; };
+		83174E3E254868F600A96734 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E3D254868F600A96734 /* Double+Extension.swift */; };
+		83174E412548791B00A96734 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E402548791B00A96734 /* UIColor+Extension.swift */; };
+		83174E44254879C200A96734 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83174E43254879C200A96734 /* LanguageType.swift */; };
 		837EB63A254844A5009F7B54 /* RepoSearchListDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB639254844A5009F7B54 /* RepoSearchListDataFetch.swift */; };
 		837EB63D254844B9009F7B54 /* RepoSearchListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */; };
 		837EB65B25484D2C009F7B54 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */; };
-		837EB65F25485100009F7B54 /* ArchiveStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB65E25485100009F7B54 /* ArchiveStorage.swift */; };
 		837EB664254854A9009F7B54 /* DataWrapperEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB663254854A9009F7B54 /* DataWrapperEntity.swift */; };
 		837EB6672548552F009F7B54 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB6662548552F009F7B54 /* HttpMethod.swift */; };
 		837EB66A254855CC009F7B54 /* RepoSearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */; };
@@ -68,10 +73,15 @@
 		21B0D8F925473C2C0052B10E /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBuilder.swift; sourceTree = "<group>"; };
 		21B0D90025473CE70052B10E /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		83174E332548663300A96734 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		83174E362548673500A96734 /* RepoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCardView.swift; sourceTree = "<group>"; };
+		83174E392548689B00A96734 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		83174E3D254868F600A96734 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		83174E402548791B00A96734 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		83174E43254879C200A96734 /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		837EB639254844A5009F7B54 /* RepoSearchListDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListDataFetch.swift; sourceTree = "<group>"; };
 		837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListRepository.swift; sourceTree = "<group>"; };
 		837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
-		837EB65E25485100009F7B54 /* ArchiveStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveStorage.swift; sourceTree = "<group>"; };
 		837EB663254854A9009F7B54 /* DataWrapperEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapperEntity.swift; sourceTree = "<group>"; };
 		837EB6662548552F009F7B54 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListViewModel.swift; sourceTree = "<group>"; };
@@ -155,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				2196E3222548266C001FC336 /* Configurable.swift */,
-				837EB65E25485100009F7B54 /* ArchiveStorage.swift */,
 				837EB6662548552F009F7B54 /* HttpMethod.swift */,
+				83174E43254879C200A96734 /* LanguageType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -167,6 +177,10 @@
 				2196E327254826D0001FC336 /* Observable+Extension.swift */,
 				2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */,
 				2196E3322548285C001FC336 /* JSON+Extension.swift */,
+				83174E332548663300A96734 /* UIView+Extension.swift */,
+				83174E392548689B00A96734 /* Int+Extension.swift */,
+				83174E3D254868F600A96734 /* Double+Extension.swift */,
+				83174E402548791B00A96734 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +286,7 @@
 			children = (
 				837EB68225485D60009F7B54 /* RepoTableCellObject.swift */,
 				837EB68625485D6C009F7B54 /* RepoTableCell.swift */,
+				83174E362548673500A96734 /* RepoCardView.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -372,26 +387,31 @@
 				837EB67725485BA4009F7B54 /* TableCellContract.swift in Sources */,
 				837EB664254854A9009F7B54 /* DataWrapperEntity.swift in Sources */,
 				2196E32C25482710001FC336 /* NetworkingLogger.swift in Sources */,
+				83174E412548791B00A96734 /* UIColor+Extension.swift in Sources */,
 				21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */,
 				837EB67125485A1A009F7B54 /* RepoSearchConfigurator.swift in Sources */,
-				837EB65F25485100009F7B54 /* ArchiveStorage.swift in Sources */,
+				83174E44254879C200A96734 /* LanguageType.swift in Sources */,
 				837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */,
+				83174E3A2548689B00A96734 /* Int+Extension.swift in Sources */,
 				837EB6672548552F009F7B54 /* HttpMethod.swift in Sources */,
 				837EB63A254844A5009F7B54 /* RepoSearchListDataFetch.swift in Sources */,
 				837EB65B25484D2C009F7B54 /* RepositoryEntity.swift in Sources */,
 				214A1BC525446154007949AC /* BaseCoordinator.swift in Sources */,
 				837EB66A254855CC009F7B54 /* RepoSearchListViewModel.swift in Sources */,
+				83174E372548673500A96734 /* RepoCardView.swift in Sources */,
 				21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */,
 				2196E336254828EB001FC336 /* NetworkParserError.swift in Sources */,
 				214A1BC225446137007949AC /* Coordinator.swift in Sources */,
 				214A1BBD25445AD8007949AC /* AppCoordinator.swift in Sources */,
 				837EB68725485D6C009F7B54 /* RepoTableCell.swift in Sources */,
 				837EB68325485D60009F7B54 /* RepoTableCellObject.swift in Sources */,
+				83174E3E254868F600A96734 /* Double+Extension.swift in Sources */,
 				2196E3232548266C001FC336 /* Configurable.swift in Sources */,
 				2196E31F254825E2001FC336 /* NetworkParser.swift in Sources */,
 				2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */,
 				2198BE24254452D300ECADB7 /* RepoSearchListViewController.swift in Sources */,
 				2196E328254826D0001FC336 /* Observable+Extension.swift in Sources */,
+				83174E342548663300A96734 /* UIView+Extension.swift in Sources */,
 				21525E09254570510038B27B /* RepoSearchListView.swift in Sources */,
 				2198BE20254452D300ECADB7 /* AppDelegate.swift in Sources */,
 				2196E3332548285C001FC336 /* JSON+Extension.swift in Sources */,

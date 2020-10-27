@@ -5,12 +5,18 @@
 //  Created by Danil on 10/27/20.
 //
 
-import Foundation
+import UIKit
 
 struct RepositoryEntity{
     let id: Int
     let name: String
     let fullName: String
+    let stargazersCount: Int
+    let language: String?
+
+    var stars: String {
+        return stargazersCount.abbreviated
+    }
 }
 
 extension RepositoryEntity: Codable {
@@ -19,5 +25,7 @@ extension RepositoryEntity: Codable {
         case id
         case name
         case fullName = "full_name"
+        case stargazersCount = "stargazers_count"
+        case language = "language"
     }
 }

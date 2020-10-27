@@ -22,10 +22,13 @@ class RepoSearchListView: UIView, RepoSearchListViewProtocol {
     let searchBar: UISearchBar = UISearchBar().then {
         $0.autocorrectionType = .no
         $0.autocapitalizationType = .none
+        $0.returnKeyType = .default
+        $0.placeholder = "Enter what you want to find..."
     }
     let tableView: UITableView = UITableView().then {
         $0.separatorStyle = .none
         $0.keyboardDismissMode = .onDrag
+        $0.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.05)
     }
     let searchedText: PublishRelay<String> = PublishRelay()
    
@@ -47,7 +50,7 @@ class RepoSearchListView: UIView, RepoSearchListViewProtocol {
             $0.leading.trailing.equalToSuperview()
             if #available(iOS 11.0, *) {
                 $0.top.equalTo(safeAreaLayoutGuide.snp.top)
-                $0.bottom.equalTo(safeAreaLayoutGuide.snp.bottom)
+                $0.bottom.equalToSuperview()
             } else {
                 $0.top.bottom.equalToSuperview()
             }
@@ -82,10 +85,3 @@ class RepoSearchListView: UIView, RepoSearchListViewProtocol {
             .disposed(by: bag)
     }
 }
-
-extension UIView {
-    func addSubviews(_ views: UIView...) {
-        views.forEach {( addSubview($0) )}
-    }
-}
-

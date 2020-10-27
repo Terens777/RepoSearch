@@ -42,7 +42,7 @@ class RepoSearchListViewController: UIViewController {
             .drive(contentView.tableView.rx.items)(TableCellFactory.getCellRx)
             .disposed(by: bag)
         contentView.searchedText
-            //.filter({ !($0.isEmpty) })
+            .filter({ !($0.isEmpty) })
             .subscribeNext(weak: self, { $0.viewModel.onSearch })
             .disposed(by: bag)
     }

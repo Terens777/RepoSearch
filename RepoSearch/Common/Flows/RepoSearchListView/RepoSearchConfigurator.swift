@@ -13,7 +13,8 @@ struct RepoSearchListConfigurator {
     init(network: NetworkCore, coordinator: AppCoordinatorProtocol & Coordinator) {
         let view = RepoSearchListView()
         let dataFetch = RepoSearchListDataFetch(network: network)
-        let viewModel = RepoSearchListViewModel(dataFetch: dataFetch, coordinator: coordinator)
+        let repository = RepoSearchListRepository(dataFetch: dataFetch)
+        let viewModel = RepoSearchListViewModel(repository: repository, coordinator: coordinator)
         controller = RepoSearchListViewController(contentView: view, viewModel: viewModel)
     }
 }

@@ -40,7 +40,6 @@ extension ConfigurableCellProtocol {
     func configure(data: TableCellDataProtocol) {}
 }
 
-
 //MARK: -Identifiable
 protocol Identifiable {
 

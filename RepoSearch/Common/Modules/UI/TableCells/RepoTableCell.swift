@@ -10,10 +10,7 @@ import RxSwift
 
 class RepoTableCell: UITableViewCell, Identifiable {
 
-    private var bag: DisposeBag!
-    private let label: UILabel = UILabel().then {
-        $0.font = UIFont.boldSystemFont(ofSize: 18)
-    }
+    private let dataView: RepoCardViewProtocol & UIView = RepoCardView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,29 +24,24 @@ class RepoTableCell: UITableViewCell, Identifiable {
     
     private func configure() {
         selectionStyle = .none
-        backgroundColor = .white
+        backgroundColor = .clear
     }
     
     private func addElements() {
-        addSubviews(label)
-        label.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(16)
-            $0.bottom.equalToSuperview().offset(-14)
-            $0.top.equalToSuperview().offset(10)
-            $0.trailing.equalToSuperview().offset(-16)
+        contentView.addSubview(dataView)
+        dataView.snp.makeConstraints {
+            $0.top.equalTo(8)
+            $0.leading.equalToSuperview().offset(10)
+            $0.trailing.equalToSuperview().offset(-10)
+            $0.bottom.equalToSuperview()
         }
-    }
-    
-    private func configure(data: RepositoryEntity) {
-        label.text = data.fullName
     }
 }
 
 extension RepoTableCell: ConfigurableCellProtocol {
     
     func configure(data: TableCellDataProtocol) {
-        bag = DisposeBag()
         let object = data as! RepoTableCellObject
-        configure(data: object.data)
+        dataView.configure(data: object.data)
     }
 }
