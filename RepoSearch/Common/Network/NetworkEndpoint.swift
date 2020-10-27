@@ -12,7 +12,7 @@ enum NetworkEndpoint {
     case getGitHubRepo
 
     var url: URL {
-        return URL(string: "http://")!
+        return URL(string: "https://api.github.com/search/repositories")!
     }
     
     var method: HttpMethod {

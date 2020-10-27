@@ -15,22 +15,7 @@ class NetworkParser<T: Codable> {
         self.dateDecodingStrategy = JSONDecoder.DateDecodingStrategy.secondsSince1970
         self.keyDecodingStrategy = JSONDecoder.KeyDecodingStrategy.useDefaultKeys
     }
-    
-    init(dateDecodingStrategy: JSONDecoder.DateDecodingStrategy) {
-        self.dateDecodingStrategy = dateDecodingStrategy
-        self.keyDecodingStrategy = JSONDecoder.KeyDecodingStrategy.useDefaultKeys
-    }
-    
-    init(keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy) {
-        self.dateDecodingStrategy = JSONDecoder.DateDecodingStrategy.secondsSince1970
-        self.keyDecodingStrategy = keyDecodingStrategy
-    }
-    
-    init(dateDecodingStrategy: JSONDecoder.DateDecodingStrategy, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy) {
-        self.dateDecodingStrategy = dateDecodingStrategy
-        self.keyDecodingStrategy = keyDecodingStrategy
-    }
-    
+
     func parse(data: Data?) throws -> T {
         guard let data = data else {
             throw NetworkParserError.emptyData

@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class SMNetworkingCore {
+class NetworkCore {
 
     func fetch<T: Codable>(with requestBuilder: NetworkRequestBuilder, parser: NetworkParser<T>) -> Observable<T> {
         return fetchData(requestBuilder: requestBuilder, parser: parser)

@@ -12,9 +12,14 @@ import SnapKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var network: NetworkCore!
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AppCoordinator(in: &window).onStart()
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        network = NetworkCore()
+        AppCoordinator(in: &window, network: network).onStart()
         return true
     }
 }

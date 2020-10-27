@@ -9,10 +9,12 @@ import UIKit
 
 class BaseCoordinator: Coordinator {
     var presentationController: UINavigationController
+    var network: NetworkCore
     weak var window: UIWindow?
     
-    init(in window: inout UIWindow?, presentationController: UINavigationController = UINavigationController()) {
+    init(in window: inout UIWindow?, network: NetworkCore, presentationController: UINavigationController = UINavigationController()) {
         self.presentationController = presentationController
+        self.network = network
         checkWindow(&window)
         window?.rootViewController = presentationController
         self.window = window

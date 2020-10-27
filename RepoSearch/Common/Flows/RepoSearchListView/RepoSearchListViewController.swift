@@ -6,15 +6,21 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class RepoSearchListViewController: UIViewController {
     
     let contentView: RepoSearchListViewProtocol & UIView
+    let viewModel: RepoSearchListViewModelProtocol
+    private let bag: DisposeBag = DisposeBag()
     
-    init(contentView: RepoSearchListViewProtocol & UIView) {
+    init(contentView: RepoSearchListViewProtocol & UIView, viewModel: RepoSearchListViewModelProtocol) {
         self.contentView = contentView
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         configure()
+        bind()
     }
     
     required init?(coder: NSCoder) {
@@ -27,7 +33,18 @@ class RepoSearchListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    }
+    
+    private func bind() {
+        viewModel.tableData
+            .asDriver()
+            .drive(contentView.tableView.rx.items)(TableCellFactory.getCellRx)
+            .disposed(by: bag)
+        contentView.searchedText
+            //.filter({ !($0.isEmpty) })
+            .subscribeNext(weak: self, { $0.viewModel.onSearch })
+            .disposed(by: bag)
     }
     
     private func configure() {

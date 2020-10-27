@@ -32,6 +32,19 @@
 		21B0D8FA25473C2C0052B10E /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8F925473C2C0052B10E /* NetworkCore.swift */; };
 		21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */; };
 		21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0D90025473CE70052B10E /* NetworkEndpoint.swift */; };
+		837EB63A254844A5009F7B54 /* RepoSearchListDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB639254844A5009F7B54 /* RepoSearchListDataFetch.swift */; };
+		837EB63D254844B9009F7B54 /* RepoSearchListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */; };
+		837EB65B25484D2C009F7B54 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */; };
+		837EB65F25485100009F7B54 /* ArchiveStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB65E25485100009F7B54 /* ArchiveStorage.swift */; };
+		837EB664254854A9009F7B54 /* DataWrapperEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB663254854A9009F7B54 /* DataWrapperEntity.swift */; };
+		837EB6672548552F009F7B54 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB6662548552F009F7B54 /* HttpMethod.swift */; };
+		837EB66A254855CC009F7B54 /* RepoSearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */; };
+		837EB66E25485768009F7B54 /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = 837EB66D25485768009F7B54 /* RxSwiftExt */; };
+		837EB67125485A1A009F7B54 /* RepoSearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB67025485A1A009F7B54 /* RepoSearchConfigurator.swift */; };
+		837EB67725485BA4009F7B54 /* TableCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB67625485BA4009F7B54 /* TableCellContract.swift */; };
+		837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB67925485CC6009F7B54 /* TableCellFactory.swift */; };
+		837EB68325485D60009F7B54 /* RepoTableCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB68225485D60009F7B54 /* RepoTableCellObject.swift */; };
+		837EB68725485D6C009F7B54 /* RepoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB68625485D6C009F7B54 /* RepoTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +68,18 @@
 		21B0D8F925473C2C0052B10E /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
 		21B0D8FD25473C6E0052B10E /* NetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBuilder.swift; sourceTree = "<group>"; };
 		21B0D90025473CE70052B10E /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		837EB639254844A5009F7B54 /* RepoSearchListDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListDataFetch.swift; sourceTree = "<group>"; };
+		837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListRepository.swift; sourceTree = "<group>"; };
+		837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		837EB65E25485100009F7B54 /* ArchiveStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveStorage.swift; sourceTree = "<group>"; };
+		837EB663254854A9009F7B54 /* DataWrapperEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapperEntity.swift; sourceTree = "<group>"; };
+		837EB6662548552F009F7B54 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListViewModel.swift; sourceTree = "<group>"; };
+		837EB67025485A1A009F7B54 /* RepoSearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchConfigurator.swift; sourceTree = "<group>"; };
+		837EB67625485BA4009F7B54 /* TableCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellContract.swift; sourceTree = "<group>"; };
+		837EB67925485CC6009F7B54 /* TableCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFactory.swift; sourceTree = "<group>"; };
+		837EB68225485D60009F7B54 /* RepoTableCellObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableCellObject.swift; sourceTree = "<group>"; };
+		837EB68625485D6C009F7B54 /* RepoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +89,7 @@
 			files = (
 				2198BE3B2544536F00ECADB7 /* RxRelay in Frameworks */,
 				2198BE392544536F00ECADB7 /* RxSwift in Frameworks */,
+				837EB66E25485768009F7B54 /* RxSwiftExt in Frameworks */,
 				2198BE3F2544541800ECADB7 /* Realm in Frameworks */,
 				2198BE452544545B00ECADB7 /* SnapKit in Frameworks */,
 				2198BE412544541800ECADB7 /* RealmSwift in Frameworks */,
@@ -98,6 +124,10 @@
 			children = (
 				2198BE23254452D300ECADB7 /* RepoSearchListViewController.swift */,
 				21525E08254570510038B27B /* RepoSearchListView.swift */,
+				837EB639254844A5009F7B54 /* RepoSearchListDataFetch.swift */,
+				837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */,
+				837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */,
+				837EB67025485A1A009F7B54 /* RepoSearchConfigurator.swift */,
 			);
 			path = RepoSearchListView;
 			sourceTree = "<group>";
@@ -125,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				2196E3222548266C001FC336 /* Configurable.swift */,
+				837EB65E25485100009F7B54 /* ArchiveStorage.swift */,
+				837EB6662548552F009F7B54 /* HttpMethod.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -158,8 +190,8 @@
 		2198BE1E254452D300ECADB7 /* RepoSearch */ = {
 			isa = PBXGroup;
 			children = (
-				21B0D8F425473BC30052B10E /* Common */,
 				21525E0D254570790038B27B /* Application */,
+				21B0D8F425473BC30052B10E /* Common */,
 			);
 			path = RepoSearch;
 			sourceTree = "<group>";
@@ -167,11 +199,13 @@
 		21B0D8F425473BC30052B10E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				837EB67E25485D38009F7B54 /* Modules */,
+				837EB65925484D18009F7B54 /* Entities */,
+				214A1BC025446129007949AC /* Coordinators */,
+				21525E0B2545705C0038B27B /* Flows */,
 				2196E326254826C5001FC336 /* Extensions */,
 				2196E32125482663001FC336 /* Helpers */,
 				21B0D8F825473C1C0052B10E /* Network */,
-				214A1BC025446129007949AC /* Coordinators */,
-				21525E0B2545705C0038B27B /* Flows */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -187,6 +221,66 @@
 				2196E335254828EB001FC336 /* NetworkParserError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		837EB65925484D18009F7B54 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */,
+				837EB663254854A9009F7B54 /* DataWrapperEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		837EB67425485B88009F7B54 /* BaseModules */ = {
+			isa = PBXGroup;
+			children = (
+				837EB67525485B90009F7B54 /* TableCellContract */,
+			);
+			path = BaseModules;
+			sourceTree = "<group>";
+		};
+		837EB67525485B90009F7B54 /* TableCellContract */ = {
+			isa = PBXGroup;
+			children = (
+				837EB67625485BA4009F7B54 /* TableCellContract.swift */,
+				837EB67925485CC6009F7B54 /* TableCellFactory.swift */,
+			);
+			path = TableCellContract;
+			sourceTree = "<group>";
+		};
+		837EB67E25485D38009F7B54 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				837EB67F25485D3D009F7B54 /* UI */,
+				837EB67425485B88009F7B54 /* BaseModules */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		837EB67F25485D3D009F7B54 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				837EB68125485D48009F7B54 /* Views */,
+				837EB68025485D41009F7B54 /* TableCells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		837EB68025485D41009F7B54 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				837EB68225485D60009F7B54 /* RepoTableCellObject.swift */,
+				837EB68625485D6C009F7B54 /* RepoTableCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		837EB68125485D48009F7B54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +307,7 @@
 				2198BE402544541800ECADB7 /* RealmSwift */,
 				2198BE442544545B00ECADB7 /* SnapKit */,
 				21525E28254575B80038B27B /* RxGesture */,
+				837EB66D25485768009F7B54 /* RxSwiftExt */,
 			);
 			productName = RepoSearch;
 			productReference = 2198BE1C254452D300ECADB7 /* RepoSearch.app */;
@@ -246,6 +341,7 @@
 				2198BE3D2544541800ECADB7 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				2198BE432544545B00ECADB7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				21525E27254575B80038B27B /* XCRemoteSwiftPackageReference "RxGesture" */,
+				837EB66C25485768009F7B54 /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
 			);
 			productRefGroup = 2198BE1D254452D300ECADB7 /* Products */;
 			projectDirPath = "";
@@ -273,13 +369,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837EB67725485BA4009F7B54 /* TableCellContract.swift in Sources */,
+				837EB664254854A9009F7B54 /* DataWrapperEntity.swift in Sources */,
 				2196E32C25482710001FC336 /* NetworkingLogger.swift in Sources */,
 				21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */,
+				837EB67125485A1A009F7B54 /* RepoSearchConfigurator.swift in Sources */,
+				837EB65F25485100009F7B54 /* ArchiveStorage.swift in Sources */,
+				837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */,
+				837EB6672548552F009F7B54 /* HttpMethod.swift in Sources */,
+				837EB63A254844A5009F7B54 /* RepoSearchListDataFetch.swift in Sources */,
+				837EB65B25484D2C009F7B54 /* RepositoryEntity.swift in Sources */,
 				214A1BC525446154007949AC /* BaseCoordinator.swift in Sources */,
+				837EB66A254855CC009F7B54 /* RepoSearchListViewModel.swift in Sources */,
 				21B0D90125473CE70052B10E /* NetworkEndpoint.swift in Sources */,
 				2196E336254828EB001FC336 /* NetworkParserError.swift in Sources */,
 				214A1BC225446137007949AC /* Coordinator.swift in Sources */,
 				214A1BBD25445AD8007949AC /* AppCoordinator.swift in Sources */,
+				837EB68725485D6C009F7B54 /* RepoTableCell.swift in Sources */,
+				837EB68325485D60009F7B54 /* RepoTableCellObject.swift in Sources */,
 				2196E3232548266C001FC336 /* Configurable.swift in Sources */,
 				2196E31F254825E2001FC336 /* NetworkParser.swift in Sources */,
 				2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */,
@@ -289,6 +396,7 @@
 				2198BE20254452D300ECADB7 /* AppDelegate.swift in Sources */,
 				2196E3332548285C001FC336 /* JSON+Extension.swift in Sources */,
 				21B0D8FA25473C2C0052B10E /* NetworkCore.swift in Sources */,
+				837EB63D254844B9009F7B54 /* RepoSearchListRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JEXR44V49;
 				INFOPLIST_FILE = RepoSearch/Application/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JEXR44V49;
 				INFOPLIST_FILE = RepoSearch/Application/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,6 +626,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		837EB66C25485768009F7B54 /* XCRemoteSwiftPackageReference "RxSwiftExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxSwiftExt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -553,6 +671,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2198BE432544545B00ECADB7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		837EB66D25485768009F7B54 /* RxSwiftExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 837EB66C25485768009F7B54 /* XCRemoteSwiftPackageReference "RxSwiftExt" */;
+			productName = RxSwiftExt;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
