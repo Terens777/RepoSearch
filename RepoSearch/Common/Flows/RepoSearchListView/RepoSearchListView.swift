@@ -11,12 +11,10 @@ import RxCocoa
 
 protocol RepoSearchListViewProtocol {
     var tableView: UITableView { get }
-    
     var searchedText: PublishRelay<String> { get }
 }
 
 class RepoSearchListView: UIView, RepoSearchListViewProtocol {
-    
     private let contentView = UIView()
     private let bag = DisposeBag()
     let searchBar: UISearchBar = UISearchBar().then {
@@ -29,6 +27,7 @@ class RepoSearchListView: UIView, RepoSearchListViewProtocol {
         $0.separatorStyle = .none
         $0.keyboardDismissMode = .onDrag
         $0.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.05)
+        $0.contentInset.bottom = 16
     }
     let searchedText: PublishRelay<String> = PublishRelay()
    

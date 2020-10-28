@@ -10,7 +10,6 @@ import RxSwift
 import RxCocoa
 
 class RepoSearchListViewController: UIViewController {
-    
     let contentView: RepoSearchListViewProtocol & UIView
     let viewModel: RepoSearchListViewModelProtocol
     private let bag: DisposeBag = DisposeBag()

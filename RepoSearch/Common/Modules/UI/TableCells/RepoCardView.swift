@@ -8,12 +8,10 @@
 import UIKit
 
 protocol RepoCardViewProtocol {
-    
     func configure(data: RepositoryEntity)
 }
 
 class RepoCardView: UIView, RepoCardViewProtocol {
-    
     private let titleLabel: UILabel = UILabel().then {
         $0.font = UIFont.boldSystemFont(ofSize: 20)
     }

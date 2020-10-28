@@ -9,7 +9,6 @@ import UIKit
 import RxSwift
 
 class RepoTableCell: UITableViewCell, Identifiable {
-
     private let dataView: RepoCardViewProtocol & UIView = RepoCardView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

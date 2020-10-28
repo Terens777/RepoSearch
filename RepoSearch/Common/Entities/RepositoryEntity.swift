@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct RepositoryEntity{
+struct RepositoryEntity {
     let id: Int
     let name: String
     let fullName: String

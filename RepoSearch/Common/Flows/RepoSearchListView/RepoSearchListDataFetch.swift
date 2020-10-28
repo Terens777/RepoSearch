@@ -14,7 +14,6 @@ protocol RepoSearchListDataFetchProtocol {
 }
 
 class RepoSearchListDataFetch: RepoSearchListDataFetchProtocol {
-    
     private let network: NetworkCore
     private let requestSerialScheduler = SerialDispatchQueueScheduler(qos: .userInitiated)
     

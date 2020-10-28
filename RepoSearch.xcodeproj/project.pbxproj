@@ -20,6 +20,8 @@
 		2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */; };
 		2196E3332548285C001FC336 /* JSON+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E3322548285C001FC336 /* JSON+Extension.swift */; };
 		2196E336254828EB001FC336 /* NetworkParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E335254828EB001FC336 /* NetworkParserError.swift */; };
+		2196E33D2548E663001FC336 /* RepoSearchListDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E33C2548E663001FC336 /* RepoSearchListDataStorage.swift */; };
+		2196E3402548EF4C001FC336 /* RepositoryStorageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196E33F2548EF4C001FC336 /* RepositoryStorageEntity.swift */; };
 		2198BE20254452D300ECADB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198BE1F254452D300ECADB7 /* AppDelegate.swift */; };
 		2198BE24254452D300ECADB7 /* RepoSearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198BE23254452D300ECADB7 /* RepoSearchListViewController.swift */; };
 		2198BE2C254452D600ECADB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2198BE2A254452D600ECADB7 /* LaunchScreen.storyboard */; };
@@ -65,6 +67,8 @@
 		2196E32E25482729001FC336 /* JSONSerialization+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Extension.swift"; sourceTree = "<group>"; };
 		2196E3322548285C001FC336 /* JSON+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Extension.swift"; sourceTree = "<group>"; };
 		2196E335254828EB001FC336 /* NetworkParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParserError.swift; sourceTree = "<group>"; };
+		2196E33C2548E663001FC336 /* RepoSearchListDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListDataStorage.swift; sourceTree = "<group>"; };
+		2196E33F2548EF4C001FC336 /* RepositoryStorageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryStorageEntity.swift; sourceTree = "<group>"; };
 		2198BE1C254452D300ECADB7 /* RepoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2198BE1F254452D300ECADB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2198BE23254452D300ECADB7 /* RepoSearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				837EB63C254844B9009F7B54 /* RepoSearchListRepository.swift */,
 				837EB669254855CC009F7B54 /* RepoSearchListViewModel.swift */,
 				837EB67025485A1A009F7B54 /* RepoSearchConfigurator.swift */,
+				2196E33C2548E663001FC336 /* RepoSearchListDataStorage.swift */,
 			);
 			path = RepoSearchListView;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			children = (
 				837EB65A25484D2C009F7B54 /* RepositoryEntity.swift */,
 				837EB663254854A9009F7B54 /* DataWrapperEntity.swift */,
+				2196E33F2548EF4C001FC336 /* RepositoryStorageEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -275,7 +281,6 @@
 		837EB67F25485D3D009F7B54 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				837EB68125485D48009F7B54 /* Views */,
 				837EB68025485D41009F7B54 /* TableCells */,
 			);
 			path = UI;
@@ -289,13 +294,6 @@
 				83174E362548673500A96734 /* RepoCardView.swift */,
 			);
 			path = TableCells;
-			sourceTree = "<group>";
-		};
-		837EB68125485D48009F7B54 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +392,7 @@
 				837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */,
 				83174E3A2548689B00A96734 /* Int+Extension.swift in Sources */,
 				837EB6672548552F009F7B54 /* HttpMethod.swift in Sources */,
+				2196E3402548EF4C001FC336 /* RepositoryStorageEntity.swift in Sources */,
 				837EB63A254844A5009F7B54 /* RepoSearchListDataFetch.swift in Sources */,
 				837EB65B25484D2C009F7B54 /* RepositoryEntity.swift in Sources */,
 				214A1BC525446154007949AC /* BaseCoordinator.swift in Sources */,
@@ -407,6 +406,7 @@
 				837EB68325485D60009F7B54 /* RepoTableCellObject.swift in Sources */,
 				83174E3E254868F600A96734 /* Double+Extension.swift in Sources */,
 				2196E3232548266C001FC336 /* Configurable.swift in Sources */,
+				2196E33D2548E663001FC336 /* RepoSearchListDataStorage.swift in Sources */,
 				2196E31F254825E2001FC336 /* NetworkParser.swift in Sources */,
 				2196E32F25482729001FC336 /* JSONSerialization+Extension.swift in Sources */,
 				2198BE24254452D300ECADB7 /* RepoSearchListViewController.swift in Sources */,
@@ -485,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -540,7 +540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -558,7 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JEXR44V49;
 				INFOPLIST_FILE = RepoSearch/Application/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,7 +578,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JEXR44V49;
 				INFOPLIST_FILE = RepoSearch/Application/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

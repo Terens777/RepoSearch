@@ -8,7 +8,6 @@
 import Foundation
 
 struct NetworkRequestBuilder {
-   
     let endpoint: NetworkEndpoint
     let queryItems: [URLQueryItem]?
     
