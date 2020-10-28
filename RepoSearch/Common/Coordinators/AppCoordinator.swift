@@ -8,8 +8,7 @@
 import UIKit
 
 protocol AppCoordinatorProtocol: class {
-    
-    func onOpenDetails()
+    func onOpenDetails(data: RepositoryEntity)
 }
 
 class AppCoordinator: BaseCoordinator, AppCoordinatorProtocol {
@@ -23,8 +22,12 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorProtocol {
         presentationController.setViewControllers([controller], animated: animated)
     }
     
-    func onOpenDetails() {
-        
+    func onOpenDetails(data: RepositoryEntity) {
+        guard let url = URL(string: data.urlString) else {
+            return
+        }
+        let controller = SafariViewController(urlPath: url)
+        presentationController.present(controller, animated: true, completion: nil)
     }
 }
 

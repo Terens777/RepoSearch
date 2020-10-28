@@ -33,6 +33,7 @@ class RepoCardView: UIView, RepoCardViewProtocol {
     }
     private let starIcomImageView: UIImageView = UIImageView().then {
         $0.image = UIImage(named: "star")
+        $0.contentMode = .scaleAspectFit
     }
     
     init() {

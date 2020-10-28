@@ -30,11 +30,6 @@ class RepoSearchListViewController: UIViewController {
         view = contentView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
     private func bind() {
         viewModel.tableData
             .asDriver()
@@ -43,6 +38,11 @@ class RepoSearchListViewController: UIViewController {
         contentView.searchedText
             .filter({ !($0.isEmpty) })
             .subscribeNext(weak: self, { $0.viewModel.onSearch })
+            .disposed(by: bag)
+        contentView.tableView.rx
+            .modelSelected(RepoTableCellObject.self)
+            .map({ $0.data })
+            .subscribeNext(weak: self, { $0.viewModel.onSelect })
             .disposed(by: bag)
     }
     

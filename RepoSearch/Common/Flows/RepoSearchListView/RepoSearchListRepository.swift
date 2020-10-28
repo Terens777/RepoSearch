@@ -29,10 +29,10 @@ class RepoSearchListRepository: RepoSearchListRepositoryProtocol {
             .catchErrorJustReturn([])
             .filter({ !$0.isEmpty })
             .flatMapLatest({ repo.save(objects: $0) })
-            .flatMapLatest({ _ in repo.getObjects() })
+            .flatMapLatest({ _ in repo.repositories })
     }
     
     func getLastSearcedRepositories() -> Observable<[RepositoryEntity]> {
-        return storage.getObjects()
+        return storage.repositories
     }
 }

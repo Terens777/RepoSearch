@@ -13,7 +13,8 @@ struct RepositoryEntity {
     let fullName: String
     let stargazersCount: Int
     let language: String?
-
+    let urlString: String
+ 
     var stars: String {
         return stargazersCount.abbreviated
     }
@@ -27,5 +28,6 @@ extension RepositoryEntity: Codable {
         case fullName = "full_name"
         case stargazersCount = "stargazers_count"
         case language = "language"
+        case urlString =  "html_url"
     }
 }

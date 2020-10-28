@@ -14,13 +14,14 @@ protocol RepoSearchListViewModelProtocol {
     var tableData: BehaviorRelay<[TableCellDataProtocol]> { get }
     
     func onSearch(fromText text: String)
+    func onSelect(object: RepositoryEntity)
 }
 
 class RepoSearchListViewModel: RepoSearchListViewModelProtocol {
     let tableData: BehaviorRelay<[TableCellDataProtocol]> = BehaviorRelay(value: [])
     private let repository: RepoSearchListRepositoryProtocol
     private let searchText: PublishRelay<String> = PublishRelay()
-    private unowned let coordinator: AppCoordinatorProtocol & Coordinator
+    private let coordinator: AppCoordinatorProtocol & Coordinator
     private let bag: DisposeBag = DisposeBag()
     
     init(repository: RepoSearchListRepositoryProtocol, coordinator: AppCoordinatorProtocol & Coordinator) {
@@ -52,6 +53,10 @@ class RepoSearchListViewModel: RepoSearchListViewModelProtocol {
     
     func onSearch(fromText text: String) {
         searchText.accept(text)
+    }
+    
+    func onSelect(object: RepositoryEntity) {
+        coordinator.onOpenDetails(data: object)
     }
     
     deinit {

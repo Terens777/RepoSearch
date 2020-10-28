@@ -52,6 +52,7 @@
 		837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB67925485CC6009F7B54 /* TableCellFactory.swift */; };
 		837EB68325485D60009F7B54 /* RepoTableCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB68225485D60009F7B54 /* RepoTableCellObject.swift */; };
 		837EB68725485D6C009F7B54 /* RepoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EB68625485D6C009F7B54 /* RepoTableCell.swift */; };
+		83B2ADCD25496817005CFE68 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2ADCC25496817005CFE68 /* SafariViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		837EB67925485CC6009F7B54 /* TableCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellFactory.swift; sourceTree = "<group>"; };
 		837EB68225485D60009F7B54 /* RepoTableCellObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableCellObject.swift; sourceTree = "<group>"; };
 		837EB68625485D6C009F7B54 /* RepoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableCell.swift; sourceTree = "<group>"; };
+		83B2ADCC25496817005CFE68 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		21525E0B2545705C0038B27B /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				83B2ADCF2549681B005CFE68 /* Safari */,
 				21525E0C254570640038B27B /* RepoSearchListView */,
 			);
 			path = Flows;
@@ -296,6 +299,14 @@
 			path = TableCells;
 			sourceTree = "<group>";
 		};
+		83B2ADCF2549681B005CFE68 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				83B2ADCC25496817005CFE68 /* SafariViewController.swift */,
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +398,7 @@
 				2196E32C25482710001FC336 /* NetworkingLogger.swift in Sources */,
 				83174E412548791B00A96734 /* UIColor+Extension.swift in Sources */,
 				21B0D8FE25473C6E0052B10E /* NetworkRequestBuilder.swift in Sources */,
+				83B2ADCD25496817005CFE68 /* SafariViewController.swift in Sources */,
 				837EB67125485A1A009F7B54 /* RepoSearchConfigurator.swift in Sources */,
 				83174E44254879C200A96734 /* LanguageType.swift in Sources */,
 				837EB67A25485CC6009F7B54 /* TableCellFactory.swift in Sources */,

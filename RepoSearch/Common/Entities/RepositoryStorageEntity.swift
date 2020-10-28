@@ -14,6 +14,7 @@ class RepositoryStorageEntity: Object {
     @objc dynamic var fullName: String = ""
     @objc dynamic var stargazersCount: Int = 0
     @objc dynamic var language: String? = nil
+    @objc dynamic var urlString: String = ""
     
     var entity: RepositoryEntity {
         return .init(
@@ -21,7 +22,8 @@ class RepositoryStorageEntity: Object {
             name: name,
             fullName: fullName,
             stargazersCount: stargazersCount,
-            language: language
+            language: language,
+            urlString: urlString
         )
     }
 }
